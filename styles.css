@@ -29,17 +29,20 @@ body {
   }
   
   .title {
-    font-size: 2em;
+    font-family: 'Righteous', cursive;
+    font-size: 2.5em;  /* Adjust font size to make it more eye-catching */
     font-weight: bold;
     margin-bottom: 10px;
     color: #6a11cb;
   }
   
   .subtitle {
-    font-size: 1em;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;  /* Adjust size for a nice contrast */
     margin-bottom: 15px;
     color: #555;
   }
+  
   
   #nameInput {
     width: 85%;
@@ -109,11 +112,11 @@ body {
   /* Responsive Design */
   @media (max-width: 768px) {
     .title {
-      font-size: 1.8em;
+      font-size: 2.8em;
     }
   
     .subtitle {
-      font-size: 0.9em;
+      font-size: 1.9em;
     }
   
     #artDisplay {
