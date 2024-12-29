@@ -3,33 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <title>Spellcaster</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Spellcaster: Design custom names, logos, and magical artwork. Create unique designs, logos, and personalized artwork with our creative tool." />
+    <meta name="keywords" content="spellcaster, design logos, create names, name generator, logo creator, artwork generator, custom designs, design tool" />
+    <meta name="author" content="Charan Teja B S">
+    <meta property="og:title" content="Spellcaster - Design Names, Logos, and Magical Art" />
+    <meta property="og:description" content="Design unique names, logos, and magical artwork with Spellcaster. Unleash your creativity and generate stunning custom designs effortlessly." />
+    <meta property="og:image" content="Designer.png" /> <!-- Ensure this is the correct image path -->
+    <meta property="og:url" content="https://spellcaster.charanteja.co/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Spellcaster - Design Names, Logos, and Magical Art">
+    <meta name="twitter:description" content="Design unique names, logos, and artwork with Spellcaster. Start creating your personalized designs today!" />
+    <meta name="twitter:image" content="Designer.png" /> <!-- Ensure this is the correct image path -->
+    
+    <title>Spellcaster - Design Names, Logos, and Magical Art</title>
+    
+    <!-- Favicon -->
     <link rel="icon" href="Designer.png" type="image/png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Righteous&family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&family=Lobster&family=Pacifico&family=Satisfy&family=Sacramento&family=Alex+Brush&display=swap"
-      rel="stylesheet"
-    />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&family=Lobster&family=Pacifico&family=Satisfy&family=Sacramento&family=Alex+Brush&display=swap" rel="stylesheet" />
+    
+    <!-- Font Observer -->
     <script src="https://cdn.jsdelivr.net/npm/fontfaceobserver@2.1.0/fontfaceobserver.standalone.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&family=Lobster&family=Pacifico&family=Satisfy&family=Sacramento&family=Alex+Brush&family=Kaushan+Script&family=Dancing&family=Fredericka+the+Great&family=Vollkorn&family=Playfair+Display&family=Merriweather&family=Amatic+SC&family=Roboto+Slab&family=Open+Sans+Condensed&family=Oswald&family=Quicksand&family=Lora&family=Zilla+Slab&family=Rock+Salt&family=Fredericka&family=Caveat&family=Pinyon+Script&family=Quicksand&family=Cinzel&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <h1 class="title">🎨 Spellcaster</h1>
       <p class="subtitle">Casting Spells, Crafting Wonders.</p>
+      
+      <!-- Input for User Name -->
       <input type="text" id="nameInput" placeholder="Enter your name" />
+      
+      <!-- Button to Generate Art -->
       <button id="generateBtn">Generate Art</button>
+      
+      <!-- Display Generated Art -->
       <div id="artDisplay"></div>
     </div>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
