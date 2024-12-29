@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb 40%, #2575fc 100%);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 500px;
+    width: 90%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #6a11cb;
+  }
+  
+  .subtitle {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  #nameInput {
+    width: 85%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin: 15px 0;
+    border: 2px solid #6a11cb;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s ease;
+  }
+  
+  #nameInput:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.4);
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(37, 117, 252, 0.3);
+  }
+  
+  #artDisplay {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em; /* Increased font size */
+    font-weight: bold;
+    border: 1px solid #6a11cb;
+    background: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #artDisplay:hover {
+    border-color: #2575fc;
+    box-shadow: 0 0 10px rgba(37, 117, 252, 0.2);
+  }
+  
+  /* Center the Download button horizontally */
+  #downloadBtn {
+    display: none;
+    margin-top: 15px;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.8em;
+    }
+  
+    .subtitle {
+      font-size: 0.9em;
+    }
+  
+    #artDisplay {
+      font-size: 3em; /* Adjusted font size for smaller screens */
+      height: 300px;
+    }
+  
+    button {
+      font-size: 1em;
+      padding: 8px 18px;
+    }
+  
+    .container {
+      margin: 0px 20px;
+    }
+  }
+  
